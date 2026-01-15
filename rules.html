@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server Rules | Project City Roleplay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-poppins text-white no-section-animations" style="background: var(--bg-main);">
+
+<!-- Navigation -->
+    <nav class="fixed w-full bg-gradient-to-b from-black/90 to-black/70 backdrop-blur-sm z-50 border-b border-white/10">
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="index.html#home" class="flex items-center space-x-3 group">
+                <img
+                    src="logo.png"
+                    alt="Project City Roleplay Logo"
+                    class="h-10 w-auto drop-shadow-[0_0_12px_rgba(255,47,166,0.6)]"
+                >
+                <span class="text-xl font-bold tracking-wide">
+                    Project City RP
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#team" class="nav-link">Team</a>
+                <a href="index.html#join" class="nav-link">Join</a>
+
+                <!-- Active Rules -->
+                <a href="rules.html" class="nav-link-active">
+                    Rules
+                    <div class="nav-underline-active"></div>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button @click="open = !open" x-data="{ open: false }" class="md:hidden text-white">
+                <i x-show="!open" class="ri-menu-line text-2xl"></i>
+                <i x-show="open" class="ri-close-line text-2xl"></i>
+
+                <!-- Mobile Menu -->
+                <div
+                    x-show="open"
+                    x-transition
+                    class="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 p-4"
+                >
+                    <div class="flex flex-col space-y-2">
+                        <a href="index.html#home" class="mobile-link">Home</a>
+                        <a href="index.html#about" class="mobile-link">About</a>
+                        <a href="index.html#team" class="mobile-link">Team</a>
+                        <a href="index.html#join" class="mobile-link">Join</a>
+
+                        <a href="rules.html" class="mobile-link-active">
+                            <i class="ri-file-list-3-line mr-2"></i>
+                            Rules
+                        </a>
+                    </div>
+                </div>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+
+<section class="min-h-screen pt-32 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold text-center mb-6 glitch-text">
+            Rules
+        </h1>
+        <p class="text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+            These rules ensure a fair, immersive, and enjoyable experience for everyone.
+            Failure to follow them may result in administrative action.
+        </p>
+
+        <div class="space-y-16 max-w-5xl mx-auto">
+
+            <!-- SECTION 1 -->
+            <div class="glass-card">
+                <h2 class="rules-title">
+                    <i class="ri-team-line"></i>Community Rules
+                </h2>
+                <ol class="rules-list">
+                    <li><strong>Personal Liability</strong>
+                        <br>It is your responsibility to read, know, and follow the rules. Furthermore, If you are part of our community then you hereby agree to the following
+                    </li>
+
+                    <li><strong>Age Requirements</strong>
+                        <br>• You must be 15 or older to join a whitelisted department.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- Departments may accept younger applicants if they are deemed mature and capable.
+                        <br>• You must be 17 or older to join the PCRP Staff Team.
+                        <br>• You must be 13 or older to join PCRP
+                    </li>
+                    
+                    <li><strong>Language Requirement</strong>
+                        <br>All members must speak and understand English fluently to ensure clear communication.
+                    </li>
+                    
+                    <li><strong>Mass Mentions</strong>
+                        <br>Only authorized staff are permitted to use roles for mass mentions (e.g., @everyone, @here). Misuse will result in disciplinary action.
+                    </li>
+                    
+                    <li><strong>Prohibited Content</strong>
+                        <br>Posting or sharing nudity, gore, NSFW material, racial/homophobic slurs, political content, or offensive language is strictly forbidden, regardless of intent or identity.
+                    </li>
+                    
+                    <li><strong>Staff Authority</strong>
+                        <br>Staff members are authorized to issue global bans or take action against members displaying unacceptable behavior.
+                    </li>
+                    
+                    <li><strong>Swearing</strong>
+                        <br>Excessive swearing is not permitted. Maintain professionalism and respect in all interactions.
+                    </li>
+                    
+                    <li><strong>Roleplay Standards</strong>
+                        <br>Intentionally trolling, griefing, or not engaging in roleplay (NITRP) behavior is prohibited.
+                    </li>
+                    
+                    <li><strong>Rule & Ban Circumvention</strong>
+                        <br>Attempts to bypass rules, exploit loopholes, or evade bans will not be tolerated and may result in permanent bans.
+                    </li>
+                    
+                    <li><strong>Appropriate Channel Use</strong>
+                        <br>All posts must be relevant to their designated channels. Misuse, including spamming, will result in disciplinary action. 
+                        <br>• Examples:
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- Support requests should go in support channels.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- GIFs and memes belong in off-topic channels.
+                    </li>
+                    
+                    <li><strong>Compliance with Staff</strong>
+                        <br>Staff decisions are final. Members must follow staff instructions without argument. Issues or appeals must be raised through support tickets. Proof is not required for staff to take action.
+                    </li>
+                    
+                    <li><strong>Unnecessary Staff Pings</strong>
+                        <br>Pinging or DMing staff without valid reasons (e.g., questions answered in FAQ or that require ticket resolution) may result in action against the member.
+                    </li>
+                    
+                    <li><strong>Conflicts Outside the Server</strong>
+                        <br>Conflicts involving members that occur outside the server may still be subject to disciplinary action if reported.
+                    </li>
+                    
+                    <li><strong>Advertising Restrictions</strong>
+                        <br>Advertising other servers, products, or services within the server or via unsolicited DMs is strictly forbidden. Failure to report such activities can also lead to penalties.
+                    </li>
+                    
+                    <li><strong>Impersonation</strong>
+                        <br>Do not impersonate staff members or other members, either by behavior or name. “Mini-modding” is also prohibited.
+                    </li>
+                    
+                    <li><strong>Mentionable Names</strong>
+                        <br>All display names must be easily mentionable.
+                    </li>
+                    
+                    <li><strong>Sensitive Topics</strong>
+                        <br>Discussions involving politics, religion, or other sensitive and divisive topics are not allowed.
+                    </li>
+                    
+                    <li><strong>Refunds & Chargebacks</strong>
+                        <br>Refunds are not issued under any circumstances. Transfers may be asked for but trades must be of equal or lesser value and is up to high command staff. Any attempt to issue a chargeback will result in an automatic permanent ban.
+                    </li>
+                    
+                    <li><strong>Respect the Server & Staff</strong>
+                        <br>Disrespectful behavior toward staff, departments, or the community will not be tolerated.
+                    </li>
+                    
+                    <li><strong>Audio Recording Consent</strong>
+                        <br>By joining the PCRP community or playing on the server, you consent to being recorded. These recordings may be used for social media (e.g., TikTok, YouTube).
+                    </li>
+                    
+                    <li><strong>Role Accountability</strong>
+                        <br>High Command Staff may remove members from their positions if they are deemed unable to fulfill the responsibilities of their rank, or if they are abusing their rank and or powers of said role.
+                    </li>
+                    
+                    <li><strong>Ticket Abuse</strong>
+                        <br>Creating tickets without valid reasons is not allowed. Tickets that go inactive will be closed without notice or resolution.
+                    </li>
+                    
+                    <li><strong>Doxing</strong>
+                        <br>Sharing personal, private, or sensitive information about any member is prohibited. Violators will be banned and reported to Discord.
+                    </li>
+                    
+                    <li><strong>Department High Command Rules</strong>
+                        <br>Members holding 01, 02, or 03 positions in SASP, LSPD, or BCSO cannot hold high command roles in any other department.
+                    </li>
+                    
+                    <li><strong>Role Management Abuse</strong>
+                        <br>Misuse of role management, such as giving unauthorized roles to oneself or others, will result in a minimum one-week ban.
+                    </li>
+                    
+                    <li><strong>Chain of Command (CoC)</strong>
+                        <br>Always follow the proper chain of command. Escalating issues unnecessarily to higher-ups will result in disciplinary action.
+                    </li>
+                    
+                    <li><strong>Cyberbullying</strong>
+                        <br>Harassment, slander, or threats will lead to an immediate ban and may be reported to Discord.
+                    </li>
+                    
+                    <li><strong>Compliance with Discord TOS</strong>
+                        <br>Violating Discord’s Terms of Service will result in a ban and a report to Discord. <u><a href="https://discord.com/terms">Read Discord's TOS here.</a></u>
+                    </li>
+
+                    <li><strong>Evidence for Reports</strong>
+                        <br>Any report requiring staff intervention must include a recorded in-game video as evidence.
+                    </li>
+                    
+                </ol>
+            </div>
+
+            <!-- SECTION 2 -->
+            <div class="glass-card">
+                <h2 class="rules-title">
+                    <i class="ri-car-line"></i>Civilian Rules
+                </h2>
+                <ol class="rules-list">
+                    <li><strong>CAD Registration</strong>
+                        <br>Failure to register in CAD (Computer-Aided Dispatch) will result in 60 seconds of additional jail time on top of existing charges. Repeated failure to register will result in exponentially higher jail times.
+                    </li>
+                    
+                    <li><strong>Activating Roles</strong>
+                        <br>You may not roleplay as a business owner, gang member, or department affiliate unless you meet the proper tier or have applied and been approved for that role.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• A gang is defined as one or more people engaging in coordinated illegal activities, wearing similar attire, and/or using similar vehicles.
+                    </li>
+                    
+                    <li><strong>Fire Activation</strong>
+                        <br>Civilians are not allowed to start fires unless they are an active member of the Fire Department, or are the proper rank within Civilian Operations.
+                    </li>
+                    
+                    <li><strong>Cop Baiting</strong>
+                        <br>Deliberately baiting emergency personnel into a pursuit or response (cop baiting) is prohibited.
+                    </li>
+                    
+                    <li><strong>Emergency Personnel Impersonation</strong>
+                        <br>Impersonating law enforcement services and stealing law enforcement vehicles is only permitted for High Class Civilian and Up.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;• Fire and EMS personnel can not be impersonated or have their vehicles stolen.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;• Staff members are Executive Class Civilians by Default
+                    </li>
+                    
+                    <li><strong>Priority Rules</strong>
+                        <br>• You may not create priority calls during:
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- Active priorities
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- Priority cooldowns
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- When priorities are on hold
+                        <br>• A priority scene is any scenario requiring significant emergency response, such as shootings, bank robberies, or major accidents.
+                        <br>• Passive activities like car thefts are allowed, but you must comply if caught.
+                    </li>
+                    
+                    <li><strong>Green Zones</strong>
+                        <br>Passive roleplay is mandatory in green zones, including spawn points, police stations, fire stations, and hospitals.
+                    </li>
+                    
+                    <li><strong>Value of Life Roleplay</strong>
+                        <br>You must realistically fear for your life when faced with a deadly threat. Actions must reflect self-preservation.
+                    </li>
+                    
+                    <li><strong>New Life Rule</strong>
+                        <br>If you die in a scenario, you cannot return to that scene or interact with it further.
+                    </li>
+                    
+                    <li><strong>Unrealistic Driving</strong>
+                        <br>Driving in an unrealistic or reckless manner (e.g., “GTA Driving”) will result in disciplinary action.
+                    </li>
+                    
+                    <li><strong>Large Weapon Retrieval</strong>
+                        <br>You must roleplay retrieving large weapons (e.g., AR, Shotgun) via /me command, or using /sling. Alternatively, you can retrieve them from the trunk or door of a vehicle.
+                    </li>
+                    
+                    <li><strong>Restricted RTO/TS Use</strong>
+                        <br>Civilians are not allowed in Radio Traffic Operations (RTO) for the purpose of acting as a police scanner. (High command staff may be in radio to monitor transmissions as long as they are not Rping)
+                    </li>
+                    
+                    <li><strong>Court Roleplay</strong>
+                        <br>
+                        <strong>• General Rule:</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- Court RP requires agreement from both parties to proceed. It is intended to resolve in-game legal disputes and promote immersive roleplay.
+                        <br><strong>• Exceptions:</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>- High-Value Cases:</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Court RP is mandatory in cases where outcomes significantly impact server progression or player roles, such as:
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒ Felony charges leading to suspension or dismissal from a department.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒ Legal disputes over substantial financial or property matters.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>- Law Violations:</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Participation is required for players accused of breaking serious in-game laws, such as violent crimes or major theft if the case requires resolution and a judge is available or if a case arises.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>- Staff Discretion</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Staff are entitled to cancel or overrule any court cases they deem unfit or not beneficial to the server's wellbeing.
+                    </li>
+                    
+                    <li><strong>Reviving Rules</strong>
+                        <br>Civilians cannot revive others. Self-revives are only permitted once a scene is cleared. If someone dies, they must either:
+                            <br>• Wait for /revive or /respawn
+                            <br>• Call 911,
+                            <br>• Or use /report if the death was accidental.
+                    </li>
+                    
+                    <li><strong>Weapon & Taser Usage</strong>
+                        <br>Only middle-class civilians may use:
+                            <br>• Full-auto weapons
+                            <br>• Full-auto-like burst patterns
+                            <br>• Tasers
+                        <br>Blacklisted weapons cannot be used. If a weapon cannot be equipped through F1, it is blacklisted.
+                    </li>
+                    
+                    <li><strong>Pedestrian Models</strong>
+                        <br>Default pedestrian models (peds) must be changed upon spawn.
+                    </li>
+                    
+                    <li><strong>Priority Cooldown (PCD)</strong>
+                        <br>You cannot flee or run when Priority Cooldown hits 0, unless the scene has lasted for over 5 minutes.
+                    </li>
+                    
+                    <li><strong>Scene Intervention</strong>
+                        <br>Do not interfere with scenes that are not yours unless you are invited by those involved. Assistance must be roleplayed using in-game communication tools such as /twt, /dw, etc. the forms of communication must be public and viewable by all parties involved
+                            <br>• Interference includes but is not limited to:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;- Following emergency vehicles responding to a call.
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;- Going to a scene uninvited and drawing attention.
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;- Failing to yield to emergency vehicles.
+                    </li>
+                    
+                    <li><strong>Restricted Roleplay Themes</strong>
+                        <br>The following roleplay scenarios are not allowed:
+                            <br>• Terrorism
+                            <br>• Any Sexual RP
+                    </li>
+                    
+                    <li><strong>Priority Blockers</strong>
+                        <br>Excessive creation of priority scenes can result in being labeled a Priority Blocker. Priority Blockers are prohibited from initiating priority calls for 24 hours.
+                    </li>
+                    
+                    <li><strong>Door Code Use</strong>
+                        <br>Door codes may only be used by authorized personnel while on duty. Off-duty personnel cannot use codes as civilians.
+                    </li>
+                    
+                    <li><strong>Law Enforcement Vehicles</strong>
+                        <br>LEO vehicles cannot be used by civilians under any circumstances.
+                    </li>
+                    
+                    <li><strong>Felonies for LEO/SAFD Members</strong>
+                        <br>Any LEO or SAFD member charged with a felony will be terminated and placed on a <u>2-week hire hold.</u>
+                    </li>
+                    
+                    <li><strong>External Scene Intervention</strong>
+                        <br>You cannot act as an external source to an active scene (e.g., sniping from a roof).
+                    </li>
+                    
+                    <li><strong>Quality of RP</strong>
+                        <br>Staff have discretion to terminate any roleplay that serves only the creator’s enjoyment and detracts from community quality (e.g., “shit RP”).
+                    </li>
+                    
+                    <li><strong>Jail Breaks</strong>
+                        <br>Civilians may attempt to break others out of custody. However, once the suspect is at a police station, they are off-limits.
+                    </li>
+                    
+                    <li><strong>Animal Ped Usage</strong>
+                        <br>Available for use by anyone; however, staff reserve the right to revoke these rights for abuse
+                    </li>
+                    
+                    <li><strong>Suicide Roleplay</strong>
+                        <br>Suicide roleplay is only permitted with approval from high command staff
+                    </li>
+                    
+                    <li><strong>Force RP</strong>
+                        <br><strong>• General Rule:</strong>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- Players are not obligated to participate in roleplay they are not interested in. Forcing another player into a roleplay scenario without their consent is strictly prohibited.
+                        <br><strong>• Exceptions</strong>:
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>- High-Value Roleplay Scenarios:</strong>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Participation is required in scenarios involving serious legal consequences or major server events, such as:
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒ Active involvement in high-stakes criminal activity (e.g., robberies, hostage situations, kidnappings, etc).
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒ Resisting arrest during a law enforcement operation.
+                        <br><strong>• Chain-of-Events Roleplay:</strong>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- If a player has initiated or consented to a related roleplay scenario, they are required to follow it through to its logical conclusion.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;- For example:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ A player committing a crime must face the outcomes, such as arrest or pursuit.
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </li>
+                    
+                    <li><strong>CAD for LEOs</strong>
+                        <br>All LEO personnel must have a registered CAD profile with valid licenses for driving and firearms.
+                    </li>
+                    
+                </ol>
+            </div>
+
+            <!-- SECTION 3 -->
+            <div class="glass-card">
+                <h2 class="rules-title">
+                    <i class="ri-shield-check-line"></i>Server Rules
+                </h2>
+                <ol class="rules-list">
+                    <li><strong>Microphone Requirements</strong><br>All players must have a working microphone to join the server.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;• Push-to-Talk (PTT) is required for in-game and RTO communication.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;• Push-to-Mute is recommended for Discord voice channels.
+                    <br>Mic spamming, including playing music or excessive background noise, is prohibited. Violations may result in staff action.</li>
+
+                    <li><strong>Staff Commands</strong><br>The use of staff commands, such as mass revives or altering server settings (e.g., priorities), is strictly prohibited unless you are authorized staff.
+                    <br>If you are unsure if a command is a staff command, do not use it.</li>
+
+                    <li><strong>Breaking Character</strong><br>Breaking character during roleplay is prohibited. All roleplay interactions must remain immersive and realistic.</li>
+
+                    <li><strong>Reserved Use of Symbols</strong><br>The use of colors or symbols in any context is restricted to staff.</li>
+
+                    <li><strong>RDM, VDM, & Unnecessary Killing</strong><br>Random Deathmatch (RDM), Vehicle Deathmatch (VDM), or any form of unnecessary killing is not allowed.</li>
+
+                    <li><strong>Blacklisted & Donator Vehicles</strong>
+                    <br>Certain vehicles are restricted to maintain fairness, balance, and realism within the server.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>• Identification of Blacklisted Vehicles:</strong>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- A vehicle is considered blacklisted if:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ It deletes automatically upon being spawned.
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ It is designated as restricted to specific roles or tiers (e.g., donator or department-specific vehicles).
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ It contains modifications or features unsuitable for roleplay (e.g., armored, weaponized, or military-grade vehicles).
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>• Rules for Vehicle Use:</strong>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Civilians:
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Civilians may only use vehicles that align with their tier level.
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Donator vehicles may not be used unless authorized and owned by the player using them.
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Law Enforcement & Emergency Services:
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ LEO and EMS personnel must follow department SOPs for vehicle use, including:
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒ Adhering to the 1:4 unmarked-to-marked ratio.
+                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒ No use of blacklisted vehicles unless specifically authorized for their role.
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Unmarked vehicles are prohibited from performing PIT maneuvers unless equipped with a ram bar.
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Donator Vehicles
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Donator vehicles cannot be used for PIT maneuvers unless equipped with a ram bar.
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Ownership of a donator vehicle does not grant special privileges to bypass server rules.
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>• Consequences:</strong>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Possession or use of blacklisted vehicles can result in:
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Vehicle removal and disciplinary action.
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Permanent revocation of privileges to use donator or department-specific vehicles.
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⊳ Temporary or permanent bans for repeated violations.
+                    </li>
+
+                    <li><strong>Meta-Gaming & LTAP</strong>
+                        <br>Meta-gaming (using out-of-character knowledge in-character) and Leaving To Avoid Punishment (LTAP) are strictly prohibited
+                    </li>
+
+                    <li><strong>Hospitalization & Jail Time</strong>
+                        <br>• Jail times longer than <strong>600 seconds</strong> require judge approval.
+                        <br>• Hospitalization durations cannot exceed <strong>120 seconds</strong> unless the player caused serious harm to emergency personnel, in which case <strong>up to 600 seconds</strong> may apply.
+                    </li>
+
+                    <li><strong>Teleporting</strong><br>Teleporting is prohibited. Players may speed to the Area of Play (AOP) but must comply with traffic laws. Law enforcement can stop and cite speeders.</li>
+
+                    <li><strong>Exploits & Developer Tools</strong><br>The use of glitches, exploits, mod menus, or unauthorized developer tools (aside from “Clear Area”) is prohibited.</li>
+
+                    <li><strong>Emergency Vehicle Lighting</strong><br>LEO vehicles are restricted from using high-mounted interior lights (visor lights) or light bars unless specifically approved.</li>
+
+                    <li><strong>Department Transfers</strong><br>LEO department transfers are allowed during the first week of every month. Transfers require approval from:
+                        <br>• The 01 of both departments
+                        <br>• Internal Affairs (IA)
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;- Supervisory roles in transfers require additional IA approval.</li>
+
+                    <li><strong>Area of Play (AOP)</strong><br>Players may not operate outside the AOP unless approved by staff for media or specific purposes.</li>
+
+                    <li><strong>Pending Licenses</strong><br>Any license listed as “pending” in CAD is considered valid for roleplay purposes.</li>
+
+                    <li><strong>Aircraft Usage</strong><br>Only members of the Federal Aviation Administration (FAA) may fly aircraft. This includes LEO and Fire air units.</li>
+
+                    <li><strong>Emergency Siren Settings</strong><br>Emergency personnel must have “Siren Park Kill” enabled and saved in their settings.</li>
+
+                    <li><strong>Ownership of Documents & Tools</strong><br>The Director or Deputy Director must maintain ownership of all documents, Discords, and applications related to PCRP.</li>
+
+                    <li><strong>Mind-Altered States</strong><br>Members in a mind-altered state (e.g., under the influence) are prohibited from participating in server activities.</li>
+
+                    <li><strong>Nude Models</strong><br>The use of nude or inappropriate pedestrian models (peds) is strictly prohibited.</li>
+
+                    <li><strong>Quit Messages</strong><br>Quit messages must be appropriate and follow all community rules. Inappropriate messages will result in disciplinary action.</li>
+
+
+                </ol>
+            </div>
+
+            <!-- SECTION 4 -->
+            <div class="glass-card">
+                <h2 class="rules-title">
+                    <i class="ri-alert-line"></i>Vehicle Policies
+                </h2>
+                <ol class="rules-list">
+                    <li><strong>General Rules</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Only one unmarked vehicle is allowed for every seven marked units in service (1:7 ratio).
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Unmarked vehicles may not perform PIT maneuvers.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Breaking unmarked vehicle policies results in a permanent ban from using unmarked vehicles.
+                    </li>
+                    <li><strong>Vehicle Sharing & Spawning</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Spawn codes for vehicles are private. Sharing these codes is prohibited.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Purchased vehicles are for the buyer's use only; they cannot be shared.
+                    </li>
+                    <li><strong>LEO Donator Vehicles</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• LEO donator vehicles cannot be used for PIT maneuvers unless equipped with a ram bar.
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Civilians can only use LEO donator vehicles if they are Tier 2 Certified Civilians.
+                    </li>
+                    <li><strong>Command Discretionde</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• High Command may revoke permissions to drive unmarked vehicles or any other restricted vehicles at any time.
+                    </li>
+                    <li><strong>Vehicle Donations</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• Donations do not grant special privileges or exemption from rules.
+                    </li>
+                    <li><strong>Caged vs. Uncaged Vehicles</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• There must be a 1:1 ratio for caged to uncaged vehicles unless a command makes an exception.
+                    </li>
+                    <li><strong>Disclaimers</strong>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;• We are not liable to respond or report any conflicts within or outside of the community. Members hold all responsibility to handle and report their own conflicts to proper authorities, regardless of rule 10.
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
